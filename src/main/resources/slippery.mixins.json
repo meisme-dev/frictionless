@@ -4,9 +4,9 @@
   "package": "com.meisme.frictionless.mixins",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
+    "OptionScreenMixin"
   ],
   "client": [
-    "TitleScreenMixin",
     "BlockMixin"
   ],
   "injectors": {

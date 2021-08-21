@@ -10,17 +10,15 @@
   ],
   "contact": {
     "homepage": "",
-    "sources": ""
+    "sources": "https://github.com/meisme-dev/frictionless"
   },
 
-  "license": "CC0-1.0",
+  "license": "MIT",
   "icon": "assets/slippery/icon.png",
 
   "environment": "*",
   "entrypoints": {
-    "main": [
-      "com.meisme.frictionless.Slippery"
-    ]
+    "modmenu": [ "com.meisme.frictionless.ModMenuIntegration" ]
   },
   "mixins": [
     "slippery.mixins.json"

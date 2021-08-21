@@ -1,5 +1,6 @@
 package com.meisme.frictionless.mixins;
 
+import com.meisme.frictionless.FrictionlessOptions;
 import net.minecraft.block.Block;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
@@ -12,6 +13,6 @@ public abstract class BlockMixin {
      */
     @Overwrite()
     public float getSlipperiness() {
-        return 1.1f;
+        return FrictionlessOptions.getFrictionValue();
     }
 }
