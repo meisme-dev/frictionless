@@ -21,7 +21,7 @@ public class FrictionlessOptions extends Screen
     public static float getFrictionValue(){
         float frictionValue = 1.1f;
         try {
-            FileReader fr = new FileReader("options.txt");
+            FileReader fr = new FileReader("optionsF.txt");
             Scanner sc = new Scanner(fr);
             while(sc.hasNextLine())
             {
@@ -44,7 +44,7 @@ public class FrictionlessOptions extends Screen
                 .setTitle(new TranslatableText("title.frictionless.options"));
         builder.setSavingRunnable(() -> {
             try {
-                FileWriter fw = new FileWriter("options.txt", true);
+                FileWriter fw = new FileWriter("optionsF.txt", true);
                 BufferedWriter bw = new BufferedWriter(fw);
                 bw.write("friction:" + currentValue);
                 bw.newLine();
