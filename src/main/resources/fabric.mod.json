@@ -3,34 +3,33 @@
   "id": "frictionless",
   "version": "${version}",
 
-  "name": "Slip Modifier",
+  "name": "Frictionless",
   "description": "Modify the global slipperiness of blocks!",
   "authors": [
     "me is me"
   ],
   "contact": {
-    "homepage": "",
     "sources": "https://github.com/meisme-dev/frictionless"
   },
 
   "license": "MIT",
-  "icon": "assets/slippery/icon.png",
+  "icon": "assets/frictionless/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "modmenu": [ "com.meisme.frictionless.ModMenuIntegration" ]
   },
   "mixins": [
-    "slippery.mixins.json"
+    "frictionless.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.11.3",
-    "fabric": "*",
     "minecraft": "1.17.x",
     "java": ">=16"
   },
   "suggests": {
-    "another-mod": "*"
+    "cloth-config": "*",
+    "modmenu": "*"
   }
 }

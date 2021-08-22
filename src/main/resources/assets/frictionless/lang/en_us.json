@@ -1,0 +1,7 @@
+{
+  "options.frictionless":  "Frictionless Options",
+  "title.frictionless.options": "Frictionless",
+  "frictionless.category.general": "General",
+  "frictionless.option.optionA": "Slipperiness value",
+  "frictionless.tooltip.slipperiness": "This is the global slipperiness value. The larger the value, the more slippery everything becomes. 1.1 is no friction and 0 is infinite friction."
+}

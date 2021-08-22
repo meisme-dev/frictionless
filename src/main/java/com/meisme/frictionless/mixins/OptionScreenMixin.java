@@ -18,7 +18,13 @@ public abstract class OptionScreenMixin extends Screen{
     }
     @Inject(at = @At("RETURN"), method = "init")
     private void addButton(CallbackInfo ci){
-        this.addDrawableChild(new ButtonWidget(this.width / 2 - 155, this.height / 6 + 24 - 6, 310, 20, new TranslatableText("options.frictionless"), (button) -> MinecraftClient.getInstance().setScreen(FrictionlessOptions.createConfigScreen(this))));
+            this.addDrawableChild(new ButtonWidget(this.width / 2 - 155, this.height / 6 + 24 - 6, 310, 20, new TranslatableText("options.frictionless"), (button) -> {
+                try {
+                    MinecraftClient.getInstance().setScreen(FrictionlessOptions.createConfigScreen(this));
+                }
+                catch(NoClassDefFoundError e){
+                    e.printStackTrace();
+                }
+            }));
     }
-
 }

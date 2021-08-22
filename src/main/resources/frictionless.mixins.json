@@ -4,11 +4,10 @@
   "package": "com.meisme.frictionless.mixins",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
-    "OptionScreenMixin"
-  ],
-  "client": [
+    "OptionScreenMixin",
     "BlockMixin"
   ],
+  "client": [ ],
   "injectors": {
     "defaultRequire": 1
   }
